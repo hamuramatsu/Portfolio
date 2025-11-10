@@ -1,0 +1,173 @@
+body {
+    color: black;
+    background: white;
+    font-family: helvetica;
+    margin: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header{
+    position: sticky;
+    height: 2rem;
+    padding: 10px;
+    margin: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  #logo img{
+    width: 30%;
+  }
+
+  #logo img:hover {
+    transform: scale(.95);
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  /* nav bar styling */
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      display: flex; 
+      flex-direction: row;
+      justify-content: flex-end; /* Adjust spacing based on screen size */
+      gap: 3rem;
+  
+    }
+  
+    nav a {
+      text-decoration: none;
+      font-size: 16px;
+      color: black;
+      margin: 0.3rem;
+      font-weight: 400;
+      display: inline-block;  /* Ensures the width applies correctly */
+      width: 50px; /* Adjust to fit your text width */
+    }
+  
+    nav a:hover {
+      font-weight: bold;
+    }
+  
+  
+  #contactContainer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 6rem;
+    margin: 6rem;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    text-align: justify;
+  }
+
+
+  @media (max-width: 660px) {
+    #contactContainer {
+        flex-direction: column;
+        margin: 4rem;
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+        gap: 2rem;
+    }
+  }
+
+  #contactContainer h1{
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  #contactDescription p {
+    font-size: 18px;
+    text-align: left;
+  }
+
+#contactDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+  #contactDescription a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;  /* Ensures the width applies correctly */
+      width: 170px; /* Adjust to fit your text width */
+  }
+
+  #contactDescription a:hover{
+    font-weight: bold;
+  }
+
+
+
+  #scroll-title {
+    position: sticky;
+    top: 480px; /* Dist from top while scrolling */
+    left: 10px;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    font-size: 42px;
+    margin-top: 0px;
+    margin-left: 30px;
+    z-index: 1000;
+  }
+  
+  /* Bottom-right position for the nav bar when it scrolls out of view */
+  .bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.474);
+    padding: 10px;
+    z-index: 999;
+    transition: all 1s ease;
+  }
+  
+  main {
+    margin: 2rem auto;
+    margin-top: 0;
+    padding: 1rem;
+    padding-top: 0;
+    max-width: 1200px; /* won't go larger than this */
+    display: flex;
+    flex-direction: column;
+    margin-left: 6.5rem;
+    margin-right: 1rem;
+  }
+
+  img {
+    width: 100%;  /* Ensure the image fills its grid area */
+    height: 100%; /* Ensure the image fills the height of the grid cell */
+    object-fit: cover; /* Maintain aspect ratio and cover the grid area */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+
+#self {
+    max-width: 500px;
+  }
+
+  
+
+  footer {
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    width: 2rem;
+    padding-left: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 1rem;
+  }
