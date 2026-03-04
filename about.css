@@ -28,8 +28,21 @@ body {
 
   #logo img:hover {
     transform: scale(.95);
-    transition: transform 0.3s ease-in-out; 
-  }
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+
+main img:hover {
+  transition: filter 1s ease-in-out;
+  filter: none;
+  -webkit-transition: filter 1s ease-in-out;
+  -moz-transition: filter 1s ease-in-out;
+  -ms-transition: filter 1s ease-in-out;
+  -o-transition: filter 1s ease-in-out;
+}
   
   /* nav bar styling */
   nav ul {

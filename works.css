@@ -150,13 +150,11 @@ body {
   }
   
   img:hover {
+    transition: filter 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
+    
     transform: scale(.95);
     filter: none;
-    -webkit-transition: transform 0.3s ease-in-out;
-    -moz-transition: transform 0.3s ease-in-out;
-    -ms-transition: transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
 }
 
   img.grayscale {
