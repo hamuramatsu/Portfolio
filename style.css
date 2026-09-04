@@ -266,8 +266,44 @@ body {
   
   /* Media query for grid display on smaller screens */
   @media (max-width: 700px) {
+
+    #hero {
+      align-items: center;
+      padding: 0rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      /* margin: 0.3rem; */
+      font-size: x-large;
+      text-align: left;
+    }
+
+    #scroll-title {
+      display: none;
+      /* position: sticky;
+      width: 100%;
+      top: 85%;
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      font-size: 42px;
+      margin-top: 0px;
+      margin-left: 10px;
+      z-index: 1000; */
+    }
+
+    main {
+      margin: 2rem auto;
+      padding: 1rem;
+      /* max-width: 1200px;  */
+      display: flex;
+      flex-direction: column;
+      /* margin-left: 6.5rem; */
+      margin-right: 1rem;
+    }
+    
+  
     .grid {
       display: grid;
+      left: 0;
       grid-template-columns: repeat(2, 1fr); /* Two equal columns */
       grid-template-rows: (1, 100px), repeat(5, 1fr);  /* Shorter row, then five equal rows */
       gap: 1rem;
@@ -275,8 +311,16 @@ body {
   
     .featured {
       display: block;
-      grid-column: 2 / 3;
+      grid-column: 1 / 2;
       grid-row: 1; 
+    }
+
+    .featured h2{
+      text-align: left;
+    }
+
+    .featured p{
+      text-align: left;
     }
   
   
